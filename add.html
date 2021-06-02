@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add record</title>
+<link href="scores.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>성적 추가 입력</h1>
+	<form action="add.jsp" method="get" accept-charset="UTF-8" onsubmit="return isSubmittable();">
+
+		<input type="submit" id="submit">
+		<table>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" placeholder="이름을 입력하세요" required></td>
+			</tr>
+			<tr>
+				<td>학번</td>
+				<td>학번은 자동 부여 됩니다.</td>
+			</tr>
+			<tr>
+				<td>국어</td>
+				<td><input type="number" name="kor" min="0" max="100" size="300" placeholder="국어점수를 입력하세요" required></td>
+			</tr>
+			<tr>
+				<td>영어</td>
+				<td><input type="number" name="eng" min="0" max="100" placeholder="영어점수를 입력하세요" required></td>
+			</tr>
+			<tr>
+				<td>수학</td>
+				<td><input type="number" name="mat" min="0" max="100" placeholder="수학점수를 입력하세요" required></td>
+			</tr>
+		</table>
+	</form>
+	
+<script type="text/javascript" src="scores.js"></script>
+</body>
+</html>
