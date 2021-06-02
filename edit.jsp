@@ -84,7 +84,7 @@
 		
 	<% }
 		catch (Exception e) {		
-		String err=e.toString();			
+		String err=e.getMessage();			
 	%>
 			<div>Error occurred.<br>
 				<%=err %></div>	
